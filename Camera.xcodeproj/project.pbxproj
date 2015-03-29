@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		C804D5781AC7280D00830D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C804D5771AC7280D00830D91 /* AppDelegate.swift */; };
 		C804D57B1AC7280D00830D91 /* Camera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C804D5791AC7280D00830D91 /* Camera.xcdatamodeld */; };
-		C804D57D1AC7280D00830D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C804D57C1AC7280D00830D91 /* ViewController.swift */; };
 		C804D5801AC7280D00830D91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C804D57E1AC7280D00830D91 /* Main.storyboard */; };
 		C804D5821AC7280D00830D91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C804D5811AC7280D00830D91 /* Images.xcassets */; };
 		C804D5851AC7280D00830D91 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C804D5831AC7280D00830D91 /* LaunchScreen.xib */; };
 		C804D5911AC7280D00830D91 /* CameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C804D5901AC7280D00830D91 /* CameraTests.swift */; };
+		C8DE6B7F1AC732D0003167F5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DE6B7E1AC732D0003167F5 /* FeedViewController.swift */; };
+		C8DE6B831AC735D8003167F5 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DE6B821AC735D8003167F5 /* FeedCell.swift */; };
+		C8DE6B851AC7383B003167F5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DE6B841AC7383B003167F5 /* MobileCoreServices.framework */; };
+		C8DE6B871AC74D04003167F5 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DE6B861AC74D04003167F5 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +34,16 @@
 		C804D5761AC7280D00830D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C804D5771AC7280D00830D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C804D57A1AC7280D00830D91 /* Camera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Camera.xcdatamodel; sourceTree = "<group>"; };
-		C804D57C1AC7280D00830D91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C804D57F1AC7280D00830D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C804D5811AC7280D00830D91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C804D5841AC7280D00830D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C804D58A1AC7280D00830D91 /* CameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C804D58F1AC7280D00830D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C804D5901AC7280D00830D91 /* CameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTests.swift; sourceTree = "<group>"; };
+		C8DE6B7E1AC732D0003167F5 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = ../FeedViewController.swift; sourceTree = "<group>"; };
+		C8DE6B821AC735D8003167F5 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCell.swift; path = ../FeedCell.swift; sourceTree = "<group>"; };
+		C8DE6B841AC7383B003167F5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C8DE6B861AC74D04003167F5 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8DE6B851AC7383B003167F5 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +86,14 @@
 		C804D5741AC7280D00830D91 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				C8DE6B821AC735D8003167F5 /* FeedCell.swift */,
+				C8DE6B7E1AC732D0003167F5 /* FeedViewController.swift */,
 				C804D5771AC7280D00830D91 /* AppDelegate.swift */,
-				C804D57C1AC7280D00830D91 /* ViewController.swift */,
 				C804D57E1AC7280D00830D91 /* Main.storyboard */,
 				C804D5811AC7280D00830D91 /* Images.xcassets */,
 				C804D5831AC7280D00830D91 /* LaunchScreen.xib */,
 				C804D5791AC7280D00830D91 /* Camera.xcdatamodeld */,
+				C8DE6B861AC74D04003167F5 /* FeedItem.swift */,
 				C804D5751AC7280D00830D91 /* Supporting Files */,
 			);
 			path = Camera;
@@ -93,6 +102,7 @@
 		C804D5751AC7280D00830D91 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C8DE6B841AC7383B003167F5 /* MobileCoreServices.framework */,
 				C804D5761AC7280D00830D91 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -215,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C804D57D1AC7280D00830D91 /* ViewController.swift in Sources */,
 				C804D57B1AC7280D00830D91 /* Camera.xcdatamodeld in Sources */,
+				C8DE6B831AC735D8003167F5 /* FeedCell.swift in Sources */,
+				C8DE6B7F1AC732D0003167F5 /* FeedViewController.swift in Sources */,
+				C8DE6B871AC74D04003167F5 /* FeedItem.swift in Sources */,
 				C804D5781AC7280D00830D91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +421,7 @@
 				C804D5961AC7280D00830D91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C804D5971AC7280D00830D91 /* Build configuration list for PBXNativeTarget "CameraTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				C804D5991AC7280D00830D91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
